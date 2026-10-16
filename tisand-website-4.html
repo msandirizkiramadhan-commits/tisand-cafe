@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#20271f">
+<title>Tisand — Coffee, Slow Moments</title>
+<style>
+:root{--ink:#20271f;--cream:#f3efe6;--muted:#c8c4b8;--orange:#c96f4a;--sage:#a9b49a;--line:rgba(243,239,230,.22)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--cream);font-family:Georgia,'Times New Roman',serif}a{color:inherit;text-decoration:none}.sans{font-family:Arial,Helvetica,sans-serif;letter-spacing:.08em;text-transform:uppercase}.nav{display:flex;justify-content:space-between;align-items:center;padding:24px 7vw;border-bottom:1px solid var(--line)}.brand{font-size:25px;letter-spacing:.12em}.brand small{display:block;font:9px Arial,sans-serif;letter-spacing:.24em;color:var(--sage);margin-top:4px}.navlinks{display:flex;gap:28px;font:10px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}.hero{min-height:650px;padding:70px 7vw 85px;display:grid;grid-template-columns:1.05fr .95fr;gap:5vw;align-items:center;overflow:hidden}.eyebrow{font:10px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--sage)}h1{font-size:clamp(58px,8vw,112px);line-height:.88;font-weight:normal;letter-spacing:-.065em;margin:26px 0 28px}h1 em{color:var(--orange);font-weight:normal}.intro{font:14px/1.9 Arial,sans-serif;color:var(--muted);max-width:390px}.actions{display:flex;align-items:center;gap:25px;margin-top:35px}.button{background:var(--orange);color:#fff;padding:16px 22px;font:10px Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;display:inline-block}.textlink{font:10px Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;border-bottom:1px solid var(--sage);padding-bottom:7px}.visual{height:490px;position:relative;display:flex;align-items:center;justify-content:center}.orb{position:absolute;width:min(37vw,390px);height:min(37vw,390px);border-radius:50%;background:#b9a486;right:8%;top:8%;opacity:.95}.cup{position:relative;width:230px;height:190px;background:linear-gradient(135deg,#e5d8c4,#a99479);border-radius:10px 10px 75px 75px;transform:rotate(-8deg);box-shadow:25px 35px 60px #1119;z-index:2}.cup:before{content:"";position:absolute;width:95px;height:85px;border:17px solid #b6a186;border-left-color:#d4c1a7;border-radius:50%;right:-72px;top:32px}.coffee{position:absolute;top:8px;left:8px;right:8px;height:28px;border-radius:50%;background:#443127;border:5px solid #eadcc8}.cupword{position:absolute;top:67px;left:0;right:0;text-align:center;color:#374032;font-size:25px;letter-spacing:.14em}.leaf{position:absolute;width:210px;height:90px;border-radius:100% 0 100% 0;background:var(--sage);transform:rotate(-28deg);left:2%;bottom:12%;opacity:.75}.stamp{position:absolute;right:0;bottom:4%;border:1px solid var(--cream);border-radius:50%;width:100px;height:100px;display:grid;place-items:center;text-align:center;font:9px/1.8 Arial,sans-serif;letter-spacing:.13em;transform:rotate(12deg)}.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 7vw;color:var(--sage);font-size:18px;letter-spacing:.12em;text-align:center}.section{padding:90px 7vw}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:35px}.section h2{font-size:clamp(38px,5vw,64px);font-weight:normal;letter-spacing:-.04em;margin:12px 0 0}.sectionhead p{font:12px/1.8 Arial,sans-serif;color:var(--muted);max-width:280px}.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:28px;border:1px solid var(--line);min-height:220px;position:relative}.number{font:10px Arial,sans-serif;color:var(--orange);letter-spacing:.16em}.card h3{font-size:28px;font-weight:normal;margin:34px 0 10px}.card p{font:12px/1.7 Arial,sans-serif;color:var(--muted);max-width:250px}.price{position:absolute;right:25px;bottom:25px;color:var(--sage);font:12px Arial,sans-serif}.quote{background:var(--cream);color:var(--ink);padding:80px 12vw;text-align:center}.quote p{font-size:clamp(30px,4vw,48px);line-height:1.2;letter-spacing:-.04em;margin:18px auto;max-width:800px}.quote small{font:10px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#66705e}.visit{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center}.hours{border-top:1px solid var(--line);margin-top:25px}.hours div{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid var(--line);font:12px Arial,sans-serif;color:var(--muted)}.hours strong{font-weight:normal;color:var(--cream)}.contactbox{padding:32px;border:1px solid var(--line)}.contactbox p{font:13px/1.8 Arial,sans-serif;color:var(--muted)}footer{padding:25px 7vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;font:9px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}@media(max-width:700px){.nav{padding:20px 6vw}.navlinks{gap:12px;font-size:8px}.hero{grid-template-columns:1fr;padding:58px 7vw 35px;gap:0}.visual{height:350px}.orb{width:260px;height:260px;right:10%;top:6%}.cup{transform:scale(.82) rotate(-8deg)}.leaf{width:140px;height:60px;bottom:10%}.stamp{width:80px;height:80px}.section{padding:65px 7vw}.sectionhead{display:block}.menu{grid-template-columns:1fr}.card{min-height:190px}.visit{grid-template-columns:1fr;gap:35px}.quote{padding:65px 8vw}footer{flex-direction:column}.intro{font-size:13px}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#">TISAND<small>coffee · pause · repeat</small></a>
+  <nav class="navlinks"><a href="#cerita">Cerita</a><a href="#menu">Menu</a><a href="#kunjungi">Kunjungi</a></nav>
+</header>
+<main>
+<section class="hero" id="cerita">
+  <div>
+    <div class="eyebrow">A little pause in a loud world</div>
+    <h1>Temukan<br>jeda di<br><em>Tisand.</em></h1>
+    <p class="intro">Kopi yang diracik perlahan, ruang yang terasa akrab, dan waktu yang tak perlu diburu. Datang sebentar—tinggal selama yang kamu mau.</p>
+    <div class="actions"><a class="button" href="#menu">Jelajahi menu ↗</a><a class="textlink" href="#kunjungi">Kenali kami</a></div>
+  </div>
+  <div class="visual" aria-label="Ilustrasi cangkir kopi Tisand">
+    <div class="orb"></div><div class="leaf"></div>
+    <div class="cup"><div class="coffee"></div><div class="cupword">tisand</div></div>
+    <div class="stamp">GOOD COFFEE<br>GOOD COMPANY<br>EST. WITH CARE</div>
+  </div>
+</section>
+<div class="marquee">KOPI HANGAT · OBROLAN PANJANG · MOMEN KECIL YANG BERARTI</div>
+<section class="section" id="menu">
+  <div class="sectionhead"><div><div class="eyebrow">Pilihan dari bar kami</div><h2>Favorit, tanpa<br>banyak gaya.</h2></div><p>Menu contoh untuk konsep awal Tisand. Harga dan racikan bisa kamu ubah sesuai kebutuhan.</p></div>
+  <div class="menu">
+    <article class="card"><span class="number">01 / HOUSE BLEND</span><h3>Senja Latte</h3><p>Espresso, susu lembut, dan manis yang pas untuk menutup hari.</p><span class="price">Rp 22K</span></article>
+    <article class="card"><span class="number">02 / SLOW BREW</span><h3>Hening</h3><p>Kopi hitam dengan karakter bersih untuk menemani pikiran yang ramai.</p><span class="price">Rp 18K</span></article>
+    <article class="card"><span class="number">03 / SIGNATURE</span><h3>Ruang Rasa</h3><p>Perpaduan creamy dan sedikit karamel, dibuat untuk jadi cerita baru.</p><span class="price">Rp 24K</span></article>
+  </div>
+</section>
+<section class="quote"><small>Catatan kecil dari Tisand</small><p>“Kamu nggak harus selalu produktif. Kadang, secangkir kopi dan waktu untuk bernapas sudah cukup.”</p><small>Take your time. You're here.</small></section>
+<section class="section visit" id="kunjungi">
+  <div><div class="eyebrow">Singgah kapan saja</div><h2>Ruang kecil<br>untuk cerita besar.</h2><p class="intro">Tisand adalah konsep kedai kopi yang mengutamakan suasana hangat, desain sederhana, dan momen yang terasa personal.</p><div class="hours"><div><span>Senin – Jumat</span><strong>08.00 – 22.00</strong></div><div><span>Sabtu – Minggu</span><strong>09.00 – 23.00</strong></div></div></div>
+  <div class="contactbox"><div class="eyebrow">Datang dan sapa kami</div><h2 style="font-size:38px">Sampai jumpa<br>di Tisand.</h2><p>Alamat, nomor WhatsApp, dan akun media sosial bisa ditambahkan setelah detail kedai ditentukan.</p><a class="button" href="https://wa.me/" target="_blank" rel="noopener">Hubungi kami ↗</a></div>
+</section>
+</main>
+<footer><span>© TISAND — COFFEE, PAUSE, REPEAT</span><span>Dibuat dengan hati, diseduh perlahan.</span></footer>
+</body>
+</html>
